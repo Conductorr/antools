@@ -1,0 +1,85 @@
+@import "src/styles/colors";
+@import "src/styles/fonts";
+
+.container {
+  padding: 0 0 0 111px;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.media {
+  margin-top: 104px;
+
+  &_heading {
+    font: 500 50px/70px $primaryFont;
+    color: $white;
+    max-width: 600px;
+
+    &__sign {
+      color: $orange;
+    }
+  }
+
+  &_description {
+    margin-top: 30px;
+    max-width: 487px;
+    font: 400 18px/30px $primaryFont;
+    color: rgba(255, 255, 255, 0.55);
+  }
+
+  &_search {
+    background-color: $backgroundColorInput;
+    width: 498px;
+    height: 64px;
+    margin-top: 81px;
+    border-radius: 15px;
+
+    &_container {
+      display: flex;
+      align-items: center;
+      padding: 8px 11px 8px 18px;
+      &__icon {
+        width: 24px;
+        height: 24px;
+      }
+
+      &__description {
+        margin-left: 13px;
+        font: 400 14px/21px $primaryFont;
+        color: rgba(255, 255, 255, 0.38);
+      }
+
+      &__button {
+        width: 130px;
+        height: 48px;
+        margin-left: auto;
+        background-color: $orange;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+
+        &__text {
+          font: 600 16px/24px $primaryFont;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  &_footer {
+    display: flex;
+    margin-top: 111px;
+    gap: 8px;
+
+    &__icon {
+      width: 58px;
+      height: 58px;
+    }
+  }
+}
+
+.illustration {
+  margin: 58px 0 0 140px;
+  width: 589px;
+}

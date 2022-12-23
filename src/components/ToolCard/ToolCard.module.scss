@@ -1,0 +1,70 @@
+@import "src/styles/fonts";
+@import "src/styles/colors";
+
+.container {
+  width: 392px;
+  height: 294px;
+}
+
+.header {
+  display: flex;
+
+  &:hover {
+    display: none;
+  }
+
+  &__icon {
+    width: 64px;
+    height: 64px;
+    margin-right: 30px;
+  }
+
+  &_text {
+    width: 100%;
+    &__topic {
+      font: 500 24px/36px $primaryFont;
+      color: $white;
+    }
+
+    &__description {
+      width: 100px;
+      font: 400 18px/27px $primaryFont;
+      color: rgba(255, 165, 55, 0.55);
+    }
+  }
+}
+
+.main {
+  margin-top: 30px;
+  &__description {
+    width: 326px;
+    font: 400 16px/30px $primaryFont;
+    color: rgba(255, 255, 255, 0.78);
+  }
+}
+
+.footer {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  &__icon {
+    width: 42px;
+    height: 42px;
+    margin-right: 20px;
+  }
+
+  &_button {
+    width: 106px;
+    margin-left: auto;
+    height: 42px;
+    border-radius: 8px;
+    background-color: #1e252b;
+    border: none;
+
+    &__text {
+      padding: 9px 35px;
+      font: 600 16px/24px $primaryFont;
+      color: rgba(255, 255, 255, 0.55);
+    }
+  }
+}

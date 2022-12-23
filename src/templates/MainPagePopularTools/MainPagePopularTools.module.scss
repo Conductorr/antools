@@ -1,0 +1,58 @@
+@import "src/styles/colors";
+@import "src/styles/fonts";
+
+.container {
+  padding: 0 108px;
+  max-width: 1440px;
+  margin: 200px auto;
+}
+
+.topic {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+
+  &__heading {
+    font: 500 48px/62px $primaryFont;
+    color: $white;
+  }
+
+  &__description {
+    margin: 25px auto 0 auto;
+    max-width: 427px;
+    font: 500 18px/30px $primaryFont;
+    color: rgba(255, 255, 255, 0.55);
+  }
+}
+
+.tools {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 100px;
+  justify-content: center;
+  margin-top: 60px;
+  max-width: 1224px;
+}
+
+.footer {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+
+  &__button {
+    width: 184px;
+    height: 64px;
+    border-radius: 8px;
+    border-color: rgba(255, 255, 255, 0.1);
+    border-width: 1px;
+    background-color: $backgroundColorMain;
+    cursor: pointer;
+
+    &_text {
+      font: 500 20px/30px $primaryFont;
+      color: $orange;
+    }
+  }
+}

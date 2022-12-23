@@ -1,0 +1,73 @@
+@import "src/styles/fonts";
+@import "src/styles/colors";
+
+.container {
+  padding: 26px 111px;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  display: flex;
+
+  .logo {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+
+    &_icon {
+      height: 38px;
+      width: 38px;
+    }
+
+    &_heading {
+      font: 600 22px/33px $primaryFont;
+      color: $white;
+      cursor: default;
+    }
+  }
+
+  .navigation {
+    margin: 0 auto;
+    align-items: center;
+
+    &_list {
+      display: flex;
+      gap: 20px;
+
+      &__item {
+        text-decoration: none;
+        list-style: none;
+        cursor: pointer;
+        font: 500 16px/24px $primaryFont;
+        color: rgba(255, 255, 255, 0.55);
+      }
+    }
+  }
+
+  .authentication {
+    display: flex;
+    align-items: center;
+    gap: 41px;
+
+    &_login {
+      font: 600 16px/24px $primaryFont;
+      color: rgba(255, 255, 255, 0.78);
+      cursor: pointer;
+    }
+
+    &_signUp {
+      width: 118px;
+      height: 48px;
+      background-color: $orange;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+
+      &__text {
+        font: 600 16px/24px $primaryFont;
+        color: $white;
+      }
+    }
+  }
+}
