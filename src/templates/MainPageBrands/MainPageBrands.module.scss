@@ -1,0 +1,32 @@
+@import "src/styles/colors";
+@import "src/styles/fonts";
+
+.container {
+  max-width: 1224px;
+  margin: 200px auto 0 auto;
+  background-color: rgba(44, 53, 61, 0.2);
+  border-radius: 25px;
+
+  &__inner {
+    padding: 56px 83px;
+
+    &_heading {
+      font: 500 24px/36px $primaryFont;
+      color: $white;
+      text-align: center;
+    }
+
+
+    &__footer {
+      display: flex;
+      margin-top: 55px;
+      align-items: center;
+      justify-content: space-between;
+
+      &_icon {
+        width: 193px;
+        height: 42px;
+      }
+    }
+  }
+}

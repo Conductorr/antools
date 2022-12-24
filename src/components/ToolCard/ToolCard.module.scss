@@ -2,16 +2,12 @@
 @import "src/styles/colors";
 
 .container {
-  width: 392px;
+  max-width: 392px;
   height: 294px;
 }
 
 .header {
   display: flex;
-
-  &:hover {
-    display: none;
-  }
 
   &__icon {
     width: 64px;
@@ -27,7 +23,7 @@
     }
 
     &__description {
-      width: 100px;
+      width: 100%;
       font: 400 18px/27px $primaryFont;
       color: rgba(255, 165, 55, 0.55);
     }
@@ -37,7 +33,7 @@
 .main {
   margin-top: 30px;
   &__description {
-    width: 326px;
+    width: 100%;
     font: 400 16px/30px $primaryFont;
     color: rgba(255, 255, 255, 0.78);
   }

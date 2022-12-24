@@ -9,5 +9,14 @@ export { figma } from "./figma";
 export { dimond } from "./dimond";
 export { vsCodeLogo } from "./vsCodeLogo";
 export { notion } from "./notion";
-export {slack} from './slack'
-export {invasion} from './invasion'
+export { slack } from "./slack";
+export { invasion } from "./invasion";
+export { microsoft } from "./microsoft";
+export { google } from "./google";
+export { slackLogos } from "./slackLogos";
+export { wordpress } from "./wordpress";
+export { phpStorm } from "./phpStorm";
+export { toolBox } from "./toolBox";
+export { proCreate } from "./proCreate";
+export { zeplin } from "./zeplin";
+export { arrow } from "./arrow";

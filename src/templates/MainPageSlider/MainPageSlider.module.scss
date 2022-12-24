@@ -1,0 +1,51 @@
+@import "src/styles/colors";
+@import "src/styles/fonts";
+
+.container {
+  max-width: 1224px;
+  margin: 200px auto 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &__inner {
+    padding: 0 38px 100px 38px;
+
+    &_iconLeft {
+      width: 12px;
+      height: 24px;
+      stroke: rgba(255, 255, 255, 0.28);
+      cursor: pointer;
+    }
+
+    &__image {
+      margin-left: 141px;
+      width: 589px;
+
+      &_brases {
+        position: absolute;
+        top: 7rem;
+      }
+    }
+
+    &_iconRight {
+      width: 12px;
+      height: 24px;
+      stroke: rgba(255, 255, 255, 0.28);
+      cursor: pointer;
+      transform: rotate(-180deg);
+      margin-left: auto;
+    }
+  }
+
+  &__text {
+    &_description {
+      max-width: 393px;
+      font: 400 14px/30px $secondaryFont;
+      color: rgba(255, 255, 255, 0.78);
+      position: absolute;
+      left: 40rem;
+      top: 10rem;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@import "src/styles/fonts";
+@import "src/styles/colors";
+
+.container {
+  margin: 200px auto 0 auto;
+  max-width: 1224px;
+  display: flex;
+
+  &__description {
+    &_heading {
+      font: 500 48px/62.4px $primaryFont;
+      color: $white;
+    }
+
+    &_topic {
+      margin-top: 30px;
+      font: 500 18px/30px $primaryFont;
+      color: rgba(255, 255, 255, 0.55);
+      max-width: 427px;
+    }
+
+    &_button {
+      width: 198px;
+      height: 58px;
+      border: none;
+      background-color: $orange;
+      border-radius: 8px;
+      margin-top: 60px;
+
+      &_text {
+        font: 500 18px/27px $primaryFont;
+        color: $white;
+      }
+    }
+  }
+
+  &__tools {
+    display: grid;
+    margin-left: auto;
+    grid-template-columns: repeat(2, 288px);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 24px;
+    row-gap: 50px;
+
+    &__item {
+      max-width: 270px;
+    }
+  }
+}
