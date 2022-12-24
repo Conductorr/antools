@@ -1,6 +1,7 @@
 import React from "react";
 import { ToolCard } from "../../components";
 import { toolsConfig } from "./toolsConfig";
+import { Tcard } from "../../core/types";
 import styles from "./MainPagePopularTools.module.scss";
 
 function MainPagePopularTools() {
@@ -15,8 +16,14 @@ function MainPagePopularTools() {
       </div>
 
       <div className={styles.tools}>
-        {toolsConfig.map((item: any) => (
-          <ToolCard name={item.name} viewBox={item.viewBox} path={item.path} />
+        {toolsConfig.map((item: Tcard) => (
+          <ToolCard
+            price={item.price}
+            key={item.name}
+            name={item.name}
+            viewBox={item.viewBox}
+            path={item.path}
+          />
         ))}
       </div>
       <div className={styles.footer}>

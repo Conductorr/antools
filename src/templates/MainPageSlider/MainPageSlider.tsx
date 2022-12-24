@@ -1,6 +1,6 @@
 import React from "react";
 import { Icon } from "../../modules";
-import { arrow } from "../../assets/svg";
+import { arrow, sliderIcon } from "../../assets/svg";
 import styles from "./MainPageSlider.module.scss";
 
 function MainPageSlider() {
@@ -39,6 +39,25 @@ function MainPageSlider() {
         path={arrow.path}
         className={styles.container__inner_iconRight}
       />
+      <div className={styles.container__footer}>
+        <div>
+          <Icon
+            viewBox={sliderIcon.viewBox}
+            path={sliderIcon.path}
+            className={styles.container__footer_icon}
+          />
+          <Icon
+            viewBox={sliderIcon.viewBox}
+            path={sliderIcon.path}
+            className={styles.container__footer_icon_middle}
+          />
+          <Icon
+            viewBox={sliderIcon.viewBox}
+            path={sliderIcon.path}
+            className={styles.container__footer_icon}
+          />
+        </div>
+      </div>
     </div>
   );
 }

@@ -25,7 +25,7 @@
     margin-top: 30px;
     max-width: 487px;
     font: 400 18px/30px $primaryFont;
-    color: rgba(255, 255, 255, 0.55);
+    color: rgba($white, 0.55);
   }
 
   &_search {
@@ -47,7 +47,7 @@
       &__description {
         margin-left: 13px;
         font: 400 14px/21px $primaryFont;
-        color: rgba(255, 255, 255, 0.38);
+        color: rgba($white, 0.38);
       }
 
       &__button {
@@ -75,6 +75,7 @@
     &__icon {
       width: 58px;
       height: 58px;
+      cursor: pointer;
     }
   }
 }

@@ -14,7 +14,9 @@
     &_iconLeft {
       width: 12px;
       height: 24px;
-      stroke: rgba(255, 255, 255, 0.28);
+      margin-bottom: 12rem;
+      stroke-opacity: 0.28;
+      stroke: rgba($white, 0.28);
       cursor: pointer;
     }
 
@@ -31,10 +33,10 @@
     &_iconRight {
       width: 12px;
       height: 24px;
-      stroke: rgba(255, 255, 255, 0.28);
+      margin: 0 0 12rem auto;
+      stroke: $orange;
       cursor: pointer;
       transform: rotate(-180deg);
-      margin-left: auto;
     }
   }
 
@@ -42,10 +44,34 @@
     &_description {
       max-width: 393px;
       font: 400 14px/30px $secondaryFont;
-      color: rgba(255, 255, 255, 0.78);
+      color: rgba($white, 0.78);
       position: absolute;
       left: 40rem;
       top: 10rem;
+    }
+  }
+
+  &__footer {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    right: 42.2%;
+    top: 36rem;
+
+    &_icon {
+      width: 44px;
+      height: 6px;
+      margin-left: 18px;
+      cursor: pointer;
+      fill: $backgroundColorInput;
+
+      &_middle {
+        width: 44px;
+        height: 6px;
+        cursor: pointer;
+        margin-left: 18px;
+        fill: $orange;
+      }
     }
   }
 }

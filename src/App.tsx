@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Header } from "./components";
+import { Header, Footer } from "./components";
 import { MainPage } from "./templates";
 import "./styles/App.scss";
 
@@ -9,6 +9,7 @@ function App() {
       <div className="App">
         <Header />
         <MainPage />
+        <Footer />
       </div>
     </>
   );

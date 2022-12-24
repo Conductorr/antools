@@ -6,6 +6,20 @@
   margin: 200px auto 0 auto;
   background-color: rgba(44, 53, 61, 0.2);
   border-radius: 25px;
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    width: 65px;
+    height: 65px;
+    content: "";
+    overflow: hidden;
+    border-radius: 25%;
+    position: absolute;
+    background: rgba(255, 72, 66, 0.4);
+    filter: blur(50px);
+  }
+
 
   &__inner {
     padding: 56px 83px;

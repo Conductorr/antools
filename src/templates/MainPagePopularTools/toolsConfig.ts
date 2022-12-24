@@ -6,38 +6,43 @@ import {
   slack,
   invasion,
 } from "../../assets/svg";
-import { TypeIcon } from "../../core/types";
+import { Tcard } from "../../core/types";
 
-// @ts-ignore
-export const toolsConfig: any = [
+export const toolsConfig: Tcard[] = [
   {
     path: figma.path,
     viewBox: figma.viewBox,
+    price: "Free",
     name: "FIGMA",
   },
   {
     path: dimond.path,
     viewBox: dimond.viewBox,
+    price: "Trial & Paid",
     name: "Sketch",
   },
   {
     path: vsCodeLogo.path,
     viewBox: vsCodeLogo.viewBox,
+    price: "Free",
     name: "Visual Studio Code",
   },
   {
     path: notion.path,
     viewBox: notion.viewBox,
+    price: "Free & Paid",
     name: "Notion",
   },
   {
     path: slack.path,
     viewBox: slack.viewBox,
+    price: "Free & Paid",
     name: "Slack",
   },
   {
     path: invasion.path,
     viewBox: invasion.viewBox,
+    price: "Free & Paid",
     name: "Invision",
   },
 ];

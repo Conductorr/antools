@@ -2,6 +2,7 @@ import React from "react";
 import { Icon } from "../../modules";
 import ToolCard from "../../components/ToolCard";
 import { newToolsConfig } from "./newToolsConfig";
+import { Tcard } from "../../core/types";
 import styles from "./MainPageNewComerTools.module.scss";
 
 function MainPageNewComerTools() {
@@ -22,9 +23,10 @@ function MainPageNewComerTools() {
         </button>
       </div>
       <div className={styles.container__tools}>
-        {newToolsConfig.map((item: any) => (
-          <div className={styles.container__tools__item}>
+        {newToolsConfig.map((item: Tcard) => (
+          <div key={item.name} className={styles.container__tools__item}>
             <ToolCard
+              price={item.price}
               viewBox={item.viewBox}
               path={item.path}
               name={item.name}

@@ -1,0 +1,57 @@
+@import "src/styles/colors";
+@import "src/styles/fonts";
+
+.container {
+  margin-top: 250px;
+
+  &_heading {
+    font: 500 48px/62.4px $primaryFont;
+    color: $white;
+    text-align: center;
+  }
+
+  &_description {
+    font: 500 18px/30px $primaryFont;
+    color: rgba($white, 0.55);
+    text-align: center;
+    width: 427px;
+    margin: 25px auto 0 auto;
+  }
+
+  &__search {
+    background-color: $backgroundColorInput;
+    width: 498px;
+    height: 64px;
+    margin: 122px auto 0 auto;
+    border-radius: 15px;
+    cursor: text;
+
+    &__inner {
+      display: flex;
+      align-items: center;
+      padding: 8px 11px 8px 18px;
+    }
+
+    &__description {
+      margin-left: 13px;
+      cursor: text;
+      font: 400 14px/21px $primaryFont;
+      color: rgba($white, 0.38);
+    }
+
+    &__button {
+      width: 130px;
+      height: 48px;
+      margin-left: auto;
+      background-color: $orange;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+
+      &__text {
+        font: 600 16px/24px $primaryFont;
+        color: $white;
+      }
+    }
+  }
+}

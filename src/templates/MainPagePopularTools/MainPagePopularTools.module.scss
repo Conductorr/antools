@@ -22,7 +22,7 @@
     margin: 25px auto 0 auto;
     max-width: 427px;
     font: 500 18px/30px $primaryFont;
-    color: rgba(255, 255, 255, 0.55);
+    color: rgba($white, 0.55);
   }
 }
 
@@ -45,7 +45,7 @@
     width: 184px;
     height: 64px;
     border-radius: 8px;
-    border-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba($white, 0.1);
     border-width: 1px;
     background-color: $backgroundColorMain;
     cursor: pointer;

@@ -4,6 +4,7 @@ import { MainPagePopularTools } from "./MainPagePopularTools";
 import { MainPageBrands } from "./MainPageBrands";
 import { MainPageNewComerTools } from "./MainPageNewComerTools";
 import { MainPageSlider } from "./MainPageSlider";
+import { MainPageContributor } from "./MainPageContributor";
 
 function MainPage() {
   return (
@@ -13,6 +14,7 @@ function MainPage() {
       <MainPageBrands />
       <MainPageNewComerTools />
       <MainPageSlider />
+      <MainPageContributor />
     </>
   );
 }

@@ -20,3 +20,4 @@ export { toolBox } from "./toolBox";
 export { proCreate } from "./proCreate";
 export { zeplin } from "./zeplin";
 export { arrow } from "./arrow";
+export { sliderIcon } from "./sliderIcon";
