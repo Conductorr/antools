@@ -37,7 +37,7 @@
   &__description {
     width: 100%;
     font: 400 16px/30px $primaryFont;
-    color: rgba($white, 0.78);
+    color: rgba($white, 0.55);
   }
 }
 
@@ -113,4 +113,10 @@
     transition: 0.2s ease-in;
     color: $lightOrange;
   }
+
+  &:hover .main__description {
+    transition: 0.2s ease-in;
+    color: rgba($white, 0.78);
+  }
 }
+
