@@ -7,6 +7,7 @@ function Footer() {
   return (
     <div className={styles.container}>
       <div className={styles.container__inner}>
+        <div className={styles.wrapper}>
         <div className={styles.container__inner__logo}>
           <div className={styles.container__inner__logo__media}>
             <Icon
@@ -38,6 +39,8 @@ function Footer() {
             antools@awesome.com
           </h6>
         </div>
+        </div>
+        <div className={styles.wrapper}>
         <div className={styles.container__inner__categories}>
           <h1 className={styles.container__inner__categories_topic}>
             Categories
@@ -56,6 +59,7 @@ function Footer() {
             Our Partners
           </h6>
           <h6 className={styles.container__inner__info_blog}>Blog</h6>
+        </div>
         </div>
       </div>
     </div>

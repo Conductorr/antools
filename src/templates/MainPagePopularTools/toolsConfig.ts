@@ -25,7 +25,7 @@ export const toolsConfig: Tcard[] = [
     path: vsCodeLogo.path,
     viewBox: vsCodeLogo.viewBox,
     price: "Free",
-    name: "Visual Studio Code",
+    name: "V.S. Code",
   },
   {
     path: notion.path,

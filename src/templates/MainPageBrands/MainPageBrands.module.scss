@@ -9,6 +9,10 @@
   position: relative;
   overflow: hidden;
 
+  @media screen and (max-width: 678px) {
+    margin: 150px auto 0 auto;
+  }
+
   &:before {
     width: 65px;
     height: 65px;
@@ -35,7 +39,12 @@
       display: flex;
       margin-top: 55px;
       align-items: center;
-      justify-content: space-between;
+      gap: 60px;
+      justify-content: center;
+
+      @media screen and (max-width: 678px) {
+        flex-direction: column;
+      }
 
       &_icon {
         width: 193px;

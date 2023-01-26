@@ -8,8 +8,16 @@
   display: flex;
   align-items: center;
 
+  @media screen and (max-width: 678px) {
+    display: none;
+  }
+
   &__inner {
     padding: 0 38px 100px 38px;
+
+    @media screen and (max-width: 1000px) {
+      padding: 0 20px 100px 20px;
+    }
 
     &_iconLeft {
       width: 12px;
@@ -24,9 +32,23 @@
       margin-left: 141px;
       width: 589px;
 
+      @media screen and (max-width: 1000px) {
+        margin-left: unset;
+      }
+
       &_brases {
         position: absolute;
         top: 7rem;
+
+        @media screen and (max-width: 1000px) {
+          display: none;
+        }
+      }
+
+      &_person {
+        @media screen and (max-width: 1000px) {
+          width: 300px;
+        }
       }
     }
 
@@ -48,6 +70,13 @@
       position: absolute;
       left: 40rem;
       top: 10rem;
+
+      @media screen and (max-width: 1000px) {
+        max-width: unset;
+        width: 300px;
+        left: 50%;
+        top: 5rem;
+      }
     }
   }
 
@@ -73,5 +102,11 @@
         fill: $orange;
       }
     }
+  }
+}
+
+.wrapper {
+  @media screen and (max-width: 1000px) {
+    margin: 0 auto;
   }
 }

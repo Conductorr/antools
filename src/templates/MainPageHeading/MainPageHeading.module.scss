@@ -6,6 +6,11 @@
   max-width: 1440px;
   margin: 0 auto;
   display: flex;
+
+  @media screen and (max-width: 1440px) {
+    justify-content: center;
+    padding: 0 20px;
+  }
 }
 
 .media {
@@ -15,6 +20,10 @@
     font: 500 50px/70px $primaryFont;
     color: $white;
     max-width: 600px;
+
+    @media screen and (max-width: 678px) {
+      font: 500 35px/60px $primaryFont;
+    }
 
     &__sign {
       color: $orange;
@@ -34,6 +43,10 @@
     height: 64px;
     margin-top: 81px;
     border-radius: 15px;
+
+    @media screen and (max-width: 678px) {
+      width: 100%;
+    }
 
     &_container {
       display: flex;
@@ -83,4 +96,8 @@
 .illustration {
   margin: 58px 0 0 140px;
   width: 589px;
+
+  @media screen and (max-width: 1440px) {
+    display: none;
+  }
 }

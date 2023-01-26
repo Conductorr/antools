@@ -6,7 +6,19 @@
   max-width: 1224px;
   display: flex;
 
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 678px) {
+    margin: 150px auto 0 auto;
+  }
+
   &__description {
+    @media screen and (max-width: 1000px) {
+      margin: 0 auto;
+    }
+
     &_heading {
       font: 500 48px/62.4px $primaryFont;
       color: $white;
@@ -25,8 +37,12 @@
       border: none;
       background-color: $orange;
       border-radius: 8px;
-      margin-top: 60px;
+      margin-top: 80px;
       cursor: pointer;
+
+      @media screen and (max-width: 1000px) {
+        margin-left: 110px;
+      }
 
       &_text {
         font: 500 18px/27px $primaryFont;
@@ -42,5 +58,13 @@
     grid-template-rows: repeat(2, 1fr);
     column-gap: 24px;
     row-gap: 50px;
+
+    @media screen and (max-width: 1000px) {
+      margin: 0 auto;
+    }
+
+    @media screen and (max-width: 678px) {
+      grid-template-columns: repeat(1, 288px);
+    }
   }
 }

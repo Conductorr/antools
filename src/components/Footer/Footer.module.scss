@@ -5,19 +5,32 @@
   margin-top: 240px;
   border-top: 0.1px solid rgba($white, 0.15);
 
+  @media screen and (max-width: 678px) {
+    margin-top: 150px;
+  }
+
   &__inner {
-    padding: 70px 233px 98px 108px;
+    padding: 70px 0 98px 0;
     display: flex;
     max-width: 1440px;
     margin: 0 auto;
-    justify-content: space-between;
+    gap: 60px;
+    justify-content: center;
     width: 100%;
+
+    @media screen and (max-width: 420px) {
+      flex-direction: column;
+    }
 
     &__logo {
       &__media {
         display: flex;
         align-items: center;
         gap: 12px;
+
+        @media screen and (max-width: 420px) {
+          justify-content: center;
+        }
       }
       &_icon {
         width: 38px;
@@ -40,6 +53,10 @@
         color: rgba($white, 0.55);
         margin-top: 25px;
         max-width: 260px;
+
+        @media screen and (max-width: 420px) {
+          max-width: unset;
+        }
       }
     }
 
@@ -122,5 +139,18 @@
         cursor: pointer;
       }
     }
+  }
+}
+
+.wrapper {
+  display: flex;
+  gap: 60px;
+
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 420px) {
+    text-align: center;
   }
 }

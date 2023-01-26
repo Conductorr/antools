@@ -11,6 +11,7 @@ function MainPageSlider() {
         path={arrow.path}
         className={styles.container__inner_iconLeft}
       />
+        <div className={styles.wrapper}>
       <div className={styles.container__inner}>
         <div className={styles.container__inner__image}>
           <img
@@ -34,6 +35,7 @@ function MainPageSlider() {
           Occaecat aute officia excepteur non laboris id qui ad.
         </p>
       </div>
+        </div>
       <Icon
         viewBox={arrow.viewBox}
         path={arrow.path}

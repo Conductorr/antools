@@ -5,6 +5,10 @@
   padding: 0 108px;
   max-width: 1440px;
   margin: 200px auto;
+
+  @media screen and (max-width: 678px) {
+    margin: 150px auto;
+  }
 }
 
 .topic {
@@ -34,6 +38,14 @@
   justify-content: center;
   margin-top: 60px;
   max-width: 1224px;
+
+  @media screen and (max-width: 1000px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: 678px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .footer {
