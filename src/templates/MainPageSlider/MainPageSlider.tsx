@@ -16,12 +16,12 @@ function MainPageSlider() {
         <div className={styles.container__inner__image}>
           <img
             className={styles.container__inner__image_person}
-            src={"./src/assets/png/ronald.png"}
+            src="/src/assets/png/ronald.png"
             alt="ronald"
           />
           <img
             className={styles.container__inner__image_brases}
-            src={"./src/assets/png/brases.png"}
+            src="/src/assets/png/brases.png"
             alt="ronald"
           />
         </div>

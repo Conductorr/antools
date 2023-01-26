@@ -51,7 +51,7 @@ function MainPageHeading() {
         </div>
       </div>
       <div className={styles.illustration}>
-        <img src={"src/assets/png/Illustration.png"} alt="illustration" />
+        <img src="/src/assets/png/Illustration.png" alt="illustration" />
       </div>
     </div>
   );
